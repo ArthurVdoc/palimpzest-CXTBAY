@@ -1,0 +1,12 @@
+*/.github
+*/.vscode
+*/__pycache__
+abacus-research/retrieve-errors
+abacus-research/rp@k-errors
+abacus-research/parse-answer-errors
+abacus-research/tests-10-04
+abacus-research/tests-15-04
+tutorials
+tests/
+testdata
+real-estate-eval-5

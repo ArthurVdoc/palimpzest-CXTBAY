@@ -1,0 +1,15 @@
+run_id,exp_name,benchmark,campaign,sentinel_strategy,k,j,sample_budget,seed,f1,precision,recall,config_source,execution_id,final_plan_id,final_plan_str,n_distinct_operators,n_distinct_operators_sampled,n_final_exec_records,n_observations,n_sentinel_plans,optimization_cost,optimization_time,plan_execution_cost,plan_execution_time,schema_version,total_execution_cost,total_execution_time,total_input_tokens,total_output_tokens
+cuad-final-mab-k6-j4-budget50-seed42,cuad-final-mab-k6-j4-budget50-seed42,cuad,behavior,MAB,6,4,50,42,0.38075682018187146,0.81125,0.24875431199693368,filename,8e79b256c8,3e74ce28ed,"0. Schema['contract', 'contract_id', 'title'] -> MixtureOfAgentsConvert -> Schema['Affiliate License-Licensee', 'Affiliate License-Licensor', 'Agreement Date', 'Anti-Assignment', 'Audit Rights', 'Cap on Liability', 'Change of Control', 'Competitive Restriction Exception', 'Covenant Not to Sue', 'Document Name', 'Effective Date', 'Exclusivity', 'Expiration Date', 'Governing Law', 'IP Ownership Assignment', 'Insurance', 'Irrevocable or Perpetual License', 'Joint IP Ownership', 'License Grant', 'Liquidated Damages', 'Minimum Commitment', 'Most Favored Nation', 'No-Solicit of Customers', 'No-Solicit of Employees', 'Non-Compete', 'Non-Disparagement', 'Non-Transferable License', 'Notice Period to Terminate Renewal', 'Parties', 'Post-Termination Services', 'Price Restrictions', 'Renewal Term', 'Revenue/Profit Sharing', 'Rofr/Rofo/Rofn', 'Source Code Escrow', 'Termination for Convenience', 'Third Party Beneficiary', 'Uncapped Liability', 'Unlimited/All-You-Can-Eat-License', 'Volume Restriction', 'Warranty Duration', 'contract', 'contract_id', 'title']
+    (contract, contract_id, title) -> (Affiliate License-Licensee, Af)
+    Prompt Strategy: None
+    Reasoning Effort: None
+    Proposer Models: [VLLM_QWEN_2_5_14B_INSTRUCT_AWQ]
+    Temperatures: [0.4]
+    Aggregator Model: Model.VLLM_QWEN_2_5_14B_INSTRUCT_AWQ
+    Proposer Prompt Strategy: chain-of-thought-mixture-of-agents-proposer
+    Aggregator Prompt Strategy: chain-of-thought-mixture-of-agents-aggregation
+
+  1. MarshalAndScanDataOp(Dataset(schema=<class 'palimpzest.core.lib.schemas.Schema['contract', 'contract_id', 'title']'>, id=cuad, op_id=022b755afd)) -> <class 'palimpzest.core.lib.schemas.Schema['contract', 'contract_id', 'title']'>
+    (contract_id, title, contract)
+
+",47,47,200,63,1,0.42941579999999996,1159.1865963935852,0.36307500000000004,1041.246966123581,1,0.7924907999999999,2200.433562517166,3060386.0,382930.0

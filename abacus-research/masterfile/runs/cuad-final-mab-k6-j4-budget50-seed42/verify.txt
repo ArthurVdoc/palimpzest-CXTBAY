@@ -1,0 +1,1 @@
+[cobertura] 40 operadores no espaco amostrado sem nenhuma observacao. Ate o hook B3, falhas e timeouts sao indistinguiveis de 'nunca agendado'.
