@@ -6,7 +6,7 @@ Since HuggingFace datasets no longer supports loading scripts, we've created a l
 
 ### 1. Download CUAD Data
 
-First, run the setup script to download CUAD data to a local directory::
+First, run the setup script to download CUAD data to a local directory:
 
 ```bash
 python setup_cuad_data.py
