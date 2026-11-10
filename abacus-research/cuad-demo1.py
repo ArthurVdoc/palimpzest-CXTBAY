@@ -366,6 +366,11 @@ def evaluate_entry(labels, preds, substr_ok):
 
     # jaccard similarity expects strings
     # TODO: This is a hack, ideally, the return type of the preds should be known
+    # ===NEW FEATURE===
+    # Copia local: nao mutar a lista do DataRecord (to_dict e raso), senao o full_hash
+    # recalculado em _score_quality diverge e gera KeyError.
+    preds = list(preds)
+    # ===END NEW FEATURE===
     for idx, pred in enumerate(preds):
         if not isinstance(pred, str):
             print(f"Expected string, but got {pred}")

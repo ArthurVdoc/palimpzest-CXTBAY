@@ -1,0 +1,20 @@
+{
+  "description": "Operadores fisicos do CUAD (sem Qwen) com menos de 5 amostras validas na fase de sampling (fonte: amostras_por_operador.pdf / operator_sampling/operators_needing_samples.csv). Lido por cuad-sample-ops.py.",
+  "benchmark": "cuad",
+  "min_samples": 5,
+  "operators": [
+    {"full_op_id": "81dd1f8073-dc91ce0947", "label": "RAG[GPT-OSS120B;chunk=4000;nchunks=2]", "samples_before": 0},
+    {"full_op_id": "81dd1f8073-f3296a8797", "label": "RAG[Llama8B;chunk=4000;nchunks=2]", "samples_before": 0},
+    {"full_op_id": "81dd1f8073-6d23dd0c08", "label": "RAG[Llama70B;chunk=1000;nchunks=4]", "samples_before": 0},
+    {"full_op_id": "81dd1f8073-830b541372", "label": "RAG[GPT-OSS120B;chunk=1000;nchunks=4]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-853317f9e9", "label": "RAG[GPT-OSS120B;chunk=2000;nchunks=2]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-52e0d360e7", "label": "RAG[Llama8B;chunk=2000;nchunks=1]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-811f6ea820", "label": "RAG[Llama8B;chunk=1000;nchunks=2]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-88b33b5c9b", "label": "RAG[Llama70B;chunk=2000;nchunks=1]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-be1d67ac64", "label": "RAG[Llama70B;chunk=4000;nchunks=4]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-e2cd020690", "label": "RAG[Llama70B;chunk=4000;nchunks=1]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-e41fa441ad", "label": "RAG[Llama70B;chunk=1000;nchunks=2]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-46709d07f3", "label": "MoA[prop=GPT-OSS120B;agg=Llama70B;T=[0.4]]", "samples_before": 4},
+    {"full_op_id": "81dd1f8073-e5e1e6cc92", "label": "MoA[prop=Llama8B+Llama70B+GPT-OSS120B;agg=Llama8B;T=[0.4, 0.4, 0.4]]", "samples_before": 4}
+  ]
+}
