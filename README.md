@@ -56,7 +56,7 @@ Os conjuntos de dados não são distribuídos neste repositório. Baixe-os das f
 
 ### 3. Modelos
 
-Os experimentos usam quatro modelos servidos localmente com [vLLM](https://github.com/vllm-project/vllm):
+Os experimentos usam quatro modelos publicados no Hugging Face servidos localmente com [vLLM](https://github.com/vllm-project/vllm):
 
 - `meta-llama/Llama-3.1-8B-Instruct`
 - `meta-llama/Llama-3.3-70B-Instruct`
